@@ -1,0 +1,39 @@
+package br.com.rian.sysmanager.enums;
+
+/**
+ * 
+ * @author rian
+ *
+ */
+public enum CodigoErroSistema implements CodigoErro {
+	
+    ERRO_PARAMETRO_COMPOSICAO_VAGOES_INVALIDA("MSG_ERRO_PARAMETRO_COMPOSICAO_VAGOES_INVALIDA"),
+    
+    ERRO_INTERNO("MSG_ERRO_INTERNO"),
+    
+    ERRO_PARAMETRO_TRAINCOMPOSITION_NOME_INVALIDO("MSG_ERRO_PARAMETRO_TRAINCOMPOSITION_NOME_INVALIDO"),
+    
+    ERRO_PARAMETRO_TRAINCOMPOSITION_CODIGO_INVALIDO("MSG_ERRO_PARAMETRO_TRAINCOMPOSITION_CODIGO_INVALIDO"),
+    
+    ERRO_PARAMETRO_TRAINCOMPOSITION_NOVO_VAGAO("MSG_ERRO_PARAMETRO_TRAINCOMPOSITION_NOVO_VAGAO"),
+    
+    ERRO_PARAMETRO_NUMERO_VAGAO_INVALIDO("MSG_ERRO_NUMERO_VAGAO_INVALIDO"),
+    
+    ERRO_NOVO_VAGAO_INVALIDO("MSG_ERRO_NOVO_VAGAO_INVALIDO"),
+    
+    ERRO_PARAMETRO_POSICAO_VAGAO_INVALIDO("MSG_ERRO_POSICAO_VAGAO_INVALIDO");
+    
+
+    private String idBundle;
+    
+    private CodigoErroSistema(String idBundle) {
+    	
+        this.idBundle = idBundle;
+    }
+    
+    @Override
+    public String getIdBundle() {
+    	
+        return idBundle;
+    }
+}
